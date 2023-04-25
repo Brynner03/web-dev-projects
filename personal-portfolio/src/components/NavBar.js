@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
 import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
@@ -32,6 +30,10 @@ export const NavBar = () => {
     setActiveLink(value);
   }
 
+  const sendToResume = () => {
+    window.open("https://drive.google.com/file/d/1GmLo20SbqKuPEak7gdoMJOT-_6-We6Kk/view?usp=sharing", "_blank")
+  }
+
   return (
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
@@ -50,13 +52,9 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.linkedin.com/in/brynner-ventura/" target="_blank"><img src={navIcon1} alt="" /></a>
               </div>
-              <HashLink to='#connect'>
-                <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink>
+                <button className="vvd"><span onClick={sendToResume}>Resume</span></button>
             </span>
           </Navbar.Collapse>
         </Container>

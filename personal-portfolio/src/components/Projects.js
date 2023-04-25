@@ -24,7 +24,7 @@ export const Projects = () => {
     },
     {
       title: "Flappy Bird Clone",
-      description: "Experience the addictive gameplay of the classic Flappy Bird game with our exciting clone. Featuring stunning graphics and intuitive controls, this clone offers endless fun as you tap your way through pipes and obstacles to earn high scores. With its engaging gameplay and challenging levels, you'll find yourself hooked for hours.",
+      description: "Flappy Bird is a mobile game sensation where players must navigate a bird through obstacles by tapping the screen. The website provides online play and additional content for fans.",
       imgUrl: flappybird,
       url: "https://flappy-clone-bice.vercel.app/"
     }
@@ -63,7 +63,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+
     </section>
   )
 }
